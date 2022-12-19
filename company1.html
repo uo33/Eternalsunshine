@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Sunshine</title>
+    <style>
+        @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 10px;
+            font-family: "Pretendard-Regular";
+        }
+        #logo{
+            float: left;
+            margin: 35px 0 0 0;
+            /* border: solid 1px red;*/
+        }
+        #menus{
+            float: right;
+            /*border: solid 1px red;*/
+        }
+        .location{
+            color: #ffffffc7;
+        }
+        #main_menu{
+            margin-top: 10px;
+            font-size: 16px;
+            color: black;
+            font-weight: 800;
+            /*border: solid 1px red;*/
+        }
+        #top_menu{
+            width: 147px;
+            text-align: right;
+            margin: 40px 0 0 243px;
+            background-color: #85b3c1c7;
+            color: #ffffff;
+            /*border: solid 1px red;*/
+        }
+        #clear{
+            clear: both;
+        }
+        li{
+            list-style-type: none;
+        }
+        #main_menu li{
+            display: inline;
+            margin-left: 10px;
+        }
+        #main_image{
+            text-align: center;
+            width: 1100px;
+            overflow: hidden;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            overflow: hidden;
+            /* border: solid 1px red;*/
+        }
+        #contents{
+            color: #ffffff;
+            width: 1100px;
+            height: 800px;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-family: "Pretendard-Regular";
+            /* border: solid 1px red;*/
+        }
+        #sub_menu{
+            color: #ffffff;
+            width: 200px;
+            float: left;
+        }
+        #sub_menu ul{
+            margin: 15px 0 0 0 ;
+        }
+        #sub_menu li{
+            padding: 10px 0 5px 20px;
+            border-bottom: solid 2px #85b3c1c7;
+        }
+        #main_contents{
+            width: 870px;
+            float: right;
+        }
+        footer{
+            width: 100%;
+            height: 130px;
+            background-color: #85b3c1c7;
+            /* border: solid 1px red;*/
+        }
+        body{
+            background-image: url(./img/bground5.png);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        .first{
+            padding: 20px 0 0 20px;
+            height: 44px;
+            font-weight: 800px;
+            background-color: #85b3c1c7;
+            color: #ffffff;
+        }
+        .contents_title{
+            margin: 10px 0 30px 0;
+            padding: 0 0 10px 0;
+            border-bottom: solid 2px #85b3c1c7;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link {
+            color:rgb(0, 0, 0);
+        }
+        /*visited link*/
+        a:visited {
+            color:rgb(0, 0, 0);
+        }
+        /*mouse over link*/
+        a:hover{
+            color: rgb(133, 179, 193);
+        }
+        /*selected link*/
+        a:active{
+            color: rgb(133, 179, 193);
+        }
+        .sub li{
+            color: rgb(133, 179, 193);
+            font-weight: 800;
+        }
+        .sub a:link {
+            color:rgb(255, 255, 255);
+        }
+        /*visited link*/
+        .sub a:visited {
+            color:rgb(255, 255, 255);
+        }
+        /*mouse over link*/
+        .sub a:hover{
+            color: rgb(133, 179, 193);
+        }
+        /*selected link*/
+        .sub a:active{
+            color: #000000;
+        }
+        #foottext{
+            text-align: right;
+            color: #ffffff60;
+            margin: 0 auto;
+            padding-top: 40px;
+            width: 1100px;
+            font-size: 12px;
+        }
+        #foottitle
+        {   
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="./img/logo.png">
+            </a>
+        </div>
+        <nav id="menus">
+        <div id="top_menu">
+            Meet me in Montauk
+        </div>
+        <ul id="main_menu">
+            <li class="location">Lacuna.Inc</li>
+            <li>|</li>
+            <li><a href="card.html">Card</a></li>                
+            <li>|</li>
+            <li><a href="memoory.html">Memories</a></li>                
+            <li>|</li>
+            <li><a href="voice.html">Voice</a></li>                
+            <li>|</li>
+            <li><a href="info.html">Info</a></li>                
+        </ul>
+        </nav>
+    </header>
+    <section id="main_image">
+        <img src="./img/main2_1.gif">
+    </section>
+    <section id="contents">
+        <nav id="sub_menu">
+            <h3 class="first">Lacuna.Inc</h3>
+            <ul class="sub">
+                <li><a  href="company.html">The lacuna</a></li>
+                <li>How to</li>
+                <li><a  href="company2.html">The review</a></li>
+            </ul>
+        </nav>
+        <div id="main_contents">
+            <h3 class="contents_title">How to</h3>
+            <p><br>
+                기억을 지우는 4가지 단계
+                <br><br><br>
+                1단계: <br><br>
+                상담<br>
+                이 회의는 시설과 직원들을 소개하는 역할을 한다. <br>
+                당신은 우리의 최첨단 시설을 둘러보게 될 것이고 미에르즈와크 박사와 
+                직접 마주하게 될 것입니다. 여기 절차에 대해 궁금한 점이 있으면 질문할 수 있는 
+                기회가 있습니다. 그런 다음 닥터는 여러분의 소망과 기대에 대해 명확하게
+                이해할 수 있도록 일련의 질문을 할 것입니다.
+                <br><br>
+                2단계:<br><br>
+                준비<br>
+                계속 진행하기로 결정한 경우 성공적인 절차를 위해 완료해야 하는 일련의 작업이 있습니다.<br>
+                여기에는 대상 메모리에 연결된 모든 항목 또는 항목을 수집하는 작업이 포함됩니다. 시술 당일에 이 제품을 가져오시면 저희 기술자가 올바르게 폐기해 드립니다.
+                <br><br>
+                3단계:<br><br>
+                매핑<br>
+                우리의 기술자들은 우리가 대상으로 삼을 메모리의 맞춤형 지도를 만들 것이다. <br>
+                이것은 우리가 당신의 기억을 완벽하게 추출하는 데 도움이 됩니다. 
+                당신의 승인이 있으면, 우리는 절차를 위한 약속을 잡을 수 있습니다.
+                <br><br>
+                4단계:<br><br>
+                절차.<br>
+                이 절차는 특허받은 역 타임라인 기술을 사용하는데, 
+                이 기술은 가장 최근의 기억을 가장 역사적인 기억으로 지우고 
+                기억이 구축되는 감정적 핵심을 대상으로 한다. 
+                그 프로시저는 당신의 집에서 우리 기술자들에 의해 사전에 수행됩니다. 
+                그 기억들은 본질적으로 녹아있고, 여러분은 그들 자신의 침대에서 깨어났을 때 
+                그 과정에 대해 아무것도 기억하지 못할 것입니다.
+                </p>
+        </div> 
+    </section>
+    <div class="clear"></div>
+    <footer>
+        <div id="foottext">
+            <div id="foottitle">
+            E T E R N A L ㅡ S U N S H I N E
+            </div>
+            <br> Don't forget! With Lacuna, you can forget.
+            <br> Copyright © 22261065 Yang yoonji. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

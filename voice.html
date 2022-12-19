@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Sunshine</title>
+    <style>
+        @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 10px;
+            font-family: "Pretendard-Regular";
+        }
+        #logo{
+            float: left;
+            margin: 35px 0 0 0;
+            /* border: solid 1px red;*/
+        }
+        #menus{
+            float: right;
+            /*border: solid 1px red;*/
+        }
+        #main_menu{
+            margin-top: 10px;
+            font-size: 16px;
+            color: #000000c7;
+            font-weight: 800;
+            /*border: solid 1px red;*/
+        }
+        .location{
+            color: #ffffffc7;
+        }
+        #top_menu{
+            width: 147px;
+            text-align: right;
+            margin: 40px 0 0 243px;
+            background-color: #85b3c1c7;
+            color: #ffffff;
+            /*border: solid 1px red;*/
+        }
+        #clear{
+            clear: both;
+        }
+        
+        li{
+            list-style-type: none;
+        }
+        #main_menu li{
+            display: inline;
+            margin-left: 10px;
+        }
+        #main_image{
+            text-align: center;
+            width: 1100px;
+            overflow: hidden;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            overflow: hidden;
+            /* border: solid 1px red;*/
+        }
+        #contents{
+            color: #ffffff;
+            width: 1100px;
+            height: 420px;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-family: "Pretendard-Regular";
+            /* border: solid 1px red;*/
+        }
+        #sub_menu{
+            color: #ffffff;
+            width: 230px;
+            float: left;
+        }
+        #sub_menu ul{
+            margin: 15px 0 0 0 ;
+        }
+        #sub_menu li{
+            padding: 10px 0 5px 20px;
+            border-bottom: solid 2px #85b3c1c7;
+        }
+        #main_contents{
+            width: 840px;
+            float: right;
+        }
+        footer{
+            width: 100%;
+            height: 130px;
+            background-color: #85b3c1c7;
+            /* border: solid 1px red;*/
+        }
+        body{
+            background-image: url(./img/bground5.png);
+            overflow-x: hidden;
+            background-attachment: fixed;
+        }
+        .first{
+            padding: 20px 0 0 20px;
+            height: 44px;
+            font-weight: 800px;
+            background-color: #85b3c1c7;
+            color: #ffffff;
+        }
+        .contents_title{
+            margin: 10px 0 30px 0;
+            padding: 0 0 10px 0;
+            border-bottom: solid 2px #85b3c1c7;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link {
+            color:rgb(0, 0, 0);
+        }
+        /*visited link*/
+        a:visited {
+            color:rgb(0, 0, 0);
+        }
+        /*mouse over link*/
+        a:hover{
+            color: rgb(133, 179, 193);
+        }
+        /*selected link*/
+        a:active{
+            color: rgb(133, 179, 193);
+        }
+        .sub li{
+            color: rgb(133, 179, 193);
+            font-weight: 800;
+        }
+        .sub a:link {
+            color:rgb(255, 255, 255);
+        }
+        /*visited link*/
+        .sub a:visited {
+            color:rgb(255, 255, 255);
+        }
+        /*mouse over link*/
+        .sub a:hover{
+            color: rgb(133, 179, 193);
+        }
+        /*selected link*/
+        .sub a:active{
+            color: #000000;
+        }
+        #foottext{
+            text-align: right;
+            color: #ffffff60;
+            margin: 0 auto;
+            padding-top: 40px;
+            width: 1100px;
+            font-size: 12px;
+        }
+        #foottitle
+        {   
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="./img/logo.png">
+            </a>
+        </div>
+        <nav id="menus">
+        <div id="top_menu">
+            Meet me in Montauk
+        </div>
+        <ul id="main_menu">
+            <li><a href="company.html">Lacuna.Inc</a></li>
+            <li>|</li>
+            <li><a href="card.html">Card</a></li>                
+            <li>|</li>
+            <li><a href="memoory.html">Memories</a></li>                
+            <li>|</li>
+            <li class="location">Voice</li>                
+            <li>|</li>
+            <li><a href="info.html">Info</a></li>                
+        </ul>
+        </nav>
+    </header>
+    <section id="main_image">
+        <img src="./img/main2_1.gif">
+    </section>
+    <section id="contents">
+        <nav id="sub_menu">
+            <h3 class="first">Voice</h3>
+            <ul class="sub">
+                <li>Clem's tape</li>
+                <li><a href="voice1.html">Joel's tape</a></li>
+            </ul>
+        </nav>
+        <div id="main_contents">
+            <h3 class="contents_title">Clem's tape</h3>
+            <p>"Blessed are the forgetful for they get the better even of their blunders."<br>
+                망각하는 자에게는 복이 있나니, 자신의 실수까지도 잊기 때문이라. <br>
+                - 프레드리히 니체.
+            </p>
+             
+            <img src="./img/tape2.png" width="400px">
+            <audio src="./img/clem.wav" controls></audio>
+            <p> 잊지마세요! Lacuna와 함께라면, 우리는 잊을 수 있습니다.</p>
+        </div> 
+    </section>
+    <div class="clear"></div>
+    <footer>
+        <div id="foottext">
+            <div id="foottitle">
+            E T E R N A L ㅡ S U N S H I N E
+            </div>
+            <br> Don't forget! With Lacuna, you can forget.
+            <br> Copyright © 22261065 Yang yoonji. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
